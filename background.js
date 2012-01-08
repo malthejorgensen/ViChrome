@@ -294,7 +294,7 @@
       return false;
     },
     reqRestoreTab: function(req) {
-      this.tabHistory.restoreLastClosedTab();
+      for(var i = 0; i < req.times; i++) this.tabHistory.restoreLastClosedTab();
       return false;
     },
     reqNMap: function(req, sendResponse) {
